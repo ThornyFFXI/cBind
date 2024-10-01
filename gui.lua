@@ -101,7 +101,7 @@ end
 
 local function render(self)
     if state.IsOpen[1] then
-        if imgui.Begin(string.format('%s v%.2f Configuration', addon.name, addon.version, state.IsOpen, ImGuiWindowFlags_AlwaysAutoResize)) then
+        if imgui.Begin(string.format('%s v%.2f Configuration', addon.name, addon.version), state.IsOpen) then
             imgui.TextColored({1.0, 0.65, 0.26, 1.0}, 'Select Controller Type');
             if (imgui.BeginCombo('##SelectControllerType', state.Controllers[state.SelectedController], ImGuiComboFlags_None)) then
                 for index,controller in ipairs(state.Controllers) do
