@@ -9,12 +9,12 @@ This opens the GUI.  You should do this first upon loading the addon, and select
 * /cbind debug<br>
 Toggles debug mode.  When debug mode is enabled, any recognized button presses will be output to the log with the name they are recognized as.  This can be used for identifying how to bind unknown buttons or verifying the addon is working as intended with your controller.
 
-* /cbind [Button Name] [Optional: up/down] [Command]
+* /cbind [Button Name] [Optional: up/down] [Command]<br>
 Binds a command to a button.  If you do not specify up/down, the bind will trigger when the button is pressed down.  If you specify up, it will trigger when the button is released.  Binds to release do not prevent the game from seeing the button, while binds to press do.
 
-* /cunbind [Button Name] [Optional: up/down]
+* /cunbind [Button Name] [Optional: up/down]<br>
 This clears a bind.
 
 # Bound Commands
-Commands can include standard ASCII characters except semicolons.  Semicolons delineate commands, allowing you to use multiple commands from the same bind.  Both /wait and `<wait>` notation are supported.  For example, you can do:
+Commands can include standard ASCII characters except semicolons.  Semicolons delineate commands, allowing you to use multiple commands from the same bind.  Both /wait and `<wait>` notation are supported.  For example, you can do:<br>
 `/cbind R2 /p Opening SC in 10 seconds..;/wait 7;/p Opening SC in 3 seconds <wait 3>;/ws "Savage Blade" <t>`
