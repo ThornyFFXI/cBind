@@ -151,7 +151,7 @@ local function render(self)
                     imgui.TableNextColumn();
                     local text = (binding.Down and "\xEF\x81\xA3" or "\xEF\x81\xA2") .. binding.Button;
                     local macro = binding.Command;
-                    imgui.Selectable(text, false, bit.bor(ImGuiSelectableFlags_SpanAllColumns, ImGuiSelectableFlags_AllowItemOverlap));
+                    imgui.Selectable(text, false, bit.bor(ImGuiSelectableFlags_SpanAllColumns, ImGuiSelectableFlags_AllowOverlap));
                     if imgui.IsItemHovered() then
                         imgui.SetTooltip(string.format('Button: %s\r\n\r\n%s', text, macro));
                     end

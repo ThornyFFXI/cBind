@@ -26,7 +26,7 @@ SOFTWARE.
 
 addon.name      = 'cbind';
 addon.author    = 'Thorny';
-addon.version   = '1.01';
+addon.version   = '1.02';
 addon.desc      = 'Allows you to bind controller buttons to commands.';
 addon.link      = 'https://ashitaxi.com/';
 
